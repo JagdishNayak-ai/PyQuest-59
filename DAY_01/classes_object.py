@@ -14,24 +14,24 @@
 # 5. Create three different student objects with different information.
 # 6. Call display_info() for all three objects.
 
-# class Student:
-#     def __init__(self,name,age,course):
-#         self.name = name
-#         self.age = age
-#         self.course = course
+class Student:
+    def __init__(self,name,age,course):
+        self.name = name
+        self.age = age
+        self.course = course
         
-#     def display_info(self):
-#         print(f"Student name :{self.name}")
-#         print(f"Student age :{self.age}")
-#         print(f"Student course :{self.course}")
-#         print()
+    def display_info(self):
+        print(f"Student name :{self.name}")
+        print(f"Student age :{self.age}")
+        print(f"Student course :{self.course}")
+        print()
         
-# s1= Student("Jagdish",22, "MCA AI/ML")
-# s1.display_info()
-# s2= Student("Rahul",23, "B.Tech")
-# s2.display_info()
-# s3= Student("Priya",21, "MBA")
-# s3.display_info()
+s1= Student("Jagdish",22, "MCA AI/ML")
+s1.display_info()
+s2= Student("Rahul",23, "B.Tech")
+s2.display_info()
+s3= Student("Priya",21, "MBA")
+s3.display_info()
 
 
 
@@ -51,26 +51,26 @@
 # 5. Create three employee objects with different details.
 # 6. Call both methods for all three employees.
         
-# class Employee():
-#     def __init__(self,name, employee_id,department ,salary):
-#         self.name= name
-#         self.employee_id= employee_id
-#         self.department = department
-#         self.salary= salary
+class Employee():
+    def __init__(self,name, employee_id,department ,salary):
+        self.name= name
+        self.employee_id= employee_id
+        self.department = department
+        self.salary= salary
         
-#     def display_details(self):
-#         print(f"Employee Name :{self.name}")
-#         print(f"Employee ID :{self.employee_id}")
-#         print(f"Employee Department :{self.department}")
-#         print(f"Employee salary :{self.salary}")
+    def display_details(self):
+        print(f"Employee Name :{self.name}")
+        print(f"Employee ID :{self.employee_id}")
+        print(f"Employee Department :{self.department}")
+        print(f"Employee salary :{self.salary}")
     
-#     def annual_salary(self):
-#         annual_salary = 12 * self.salary
-#         print(f"Annual salary : {annual_salary}")
+    def annual_salary(self):
+        annual_salary = 12 * self.salary
+        print(f"Annual salary : {annual_salary}")
         
-# e1= Employee("Jagdish", "E101", "AI/ML",30000)
-# e1.display_details()
-# e1.annual_salary()
+e1= Employee("Jagdish", "E101", "AI/ML",30000)
+e1.display_details()
+e1.annual_salary()
 
 
 
@@ -91,31 +91,31 @@
 # 6. Create a method display_balance() to show the current balance.
 
 
-# class BankAccount():
-#     def __init__(self , account_holder , balance):
-#         self.account_holder= account_holder
-#         self.balance = balance 
+class BankAccount():
+    def __init__(self , account_holder , balance):
+        self.account_holder= account_holder
+        self.balance = balance 
         
-#     def deposit(self,amount):
-#         self.balance = self.balance + amount
-#         print(f"deposited amount {amount}")
+    def deposit(self,amount):
+        self.balance = self.balance + amount
+        print(f"deposited amount {amount}")
         
-#     def withdraw(self,amount):
-#         if amount  > self.balance:
-#             print("Insufficient Balance")
-#         else:
-#             self.balance = self.balance - amount
-#             print(f"withdrawn amount  {amount}")
+    def withdraw(self,amount):
+        if amount  > self.balance:
+            print("Insufficient Balance")
+        else:
+            self.balance = self.balance - amount
+            print(f"withdrawn amount  {amount}")
         
-#     def display_balance(self):
-#         print(f"Account Holder: {self.account_holder}")
-#         print(f"Current balance : {self.balance}")
+    def display_balance(self):
+        print(f"Account Holder: {self.account_holder}")
+        print(f"Current balance : {self.balance}")
 
-# p = BankAccount("Jagdish", 5000)
+p = BankAccount("Jagdish", 5000)
 
-# p.deposit(2000)
-# p.withdraw(1000)
-# p.display_balance()
+p.deposit(2000)
+p.withdraw(1000)
+p.display_balance()
 
 
 # Question 4: Product Management System
