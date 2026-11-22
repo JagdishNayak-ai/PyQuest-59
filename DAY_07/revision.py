@@ -20,38 +20,38 @@
 #    - Display account details.
 
 
-# class BankAccount:
-#     def __init__ (self,account_holder,initial_balance):
-#         self.account_holder= account_holder
-#         self.__balance= initial_balance
+class BankAccount:
+    def __init__ (self,account_holder,initial_balance):
+        self.account_holder= account_holder
+        self.__balance= initial_balance
         
-#     def deposit(self,amount):
-#         if amount > 0:
-#             self.__balance += amount 
-#             print(f"deposit successful: {amount}")
-#         else:
-#             print("Invalid deposit amount!")
+    def deposit(self,amount):
+        if amount > 0:
+            self.__balance += amount 
+            print(f"deposit successful: {amount}")
+        else:
+            print("Invalid deposit amount!")
             
-#     def withdraw (self,amount):
-#         if amount <= 0:
-#             print("Invalid withdrawal amount!")
-#         elif self.__balance >= amount:
-#             self.__balance -= amount
-#             print(f"Withdrawal successful: {amount}")
-#         else:
-#             print("Insufficient balance!")
+    def withdraw (self,amount):
+        if amount <= 0:
+            print("Invalid withdrawal amount!")
+        elif self.__balance >= amount:
+            self.__balance -= amount
+            print(f"Withdrawal successful: {amount}")
+        else:
+            print("Insufficient balance!")
             
-#     def get_balance(self):
-#         return self.__balance
+    def get_balance(self):
+        return self.__balance
         
-#     def show_details(self):
-#         print(f"\naccont holder:{self.account_holder}")
-#         print(f"current balance:{self.__balance}")
+    def show_details(self):
+        print(f"\naccont holder:{self.account_holder}")
+        print(f"current balance:{self.__balance}")
         
-# b = BankAccount("Jagdish",10000)
-# b.deposit(5000)
-# b.withdraw(2000)
-# b.show_details()
+b = BankAccount("Jagdish",10000)
+b.deposit(5000)
+b.withdraw(2000)
+b.show_details()
 
 
 # Question 2 – Employee Management System
@@ -73,34 +73,34 @@
 # - Create a method show_developer_details() that displays all employee and developer details.
 
 
-# class Employee():
-#     def __init__(self,name,employee_id, salary):
-#         self.name = name 
-#         self._employee_id = employee_id
-#         self.__salary = salary
+class Employee():
+    def __init__(self,name,employee_id, salary):
+        self.name = name 
+        self._employee_id = employee_id
+        self.__salary = salary
         
-#     def get_salary(self):
-#         return self.__salary
+    def get_salary(self):
+        return self.__salary
     
-#     def show_details (self):
-#         print(f"Employee name :{self.name}")
-#         print(f"Employee ID :{self._employee_id}")
-#         print(f"Employee salary:{self.get_salary()}")
+    def show_details (self):
+        print(f"Employee name :{self.name}")
+        print(f"Employee ID :{self._employee_id}")
+        print(f"Employee salary:{self.get_salary()}")
         
-# class Developer(Employee):
-#     def __init__ (self,name,employee_id,salary,programming_language):
-#         super().__init__(name,employee_id,salary)
-#         self.programming_language = programming_language
+class Developer(Employee):
+    def __init__ (self,name,employee_id,salary,programming_language):
+        super().__init__(name,employee_id,salary)
+        self.programming_language = programming_language
     
-#     def show_developer_details(self):
-#         print(f"Employee name :{self.name}")
-#         print(f"Employee ID :{self._employee_id}")
-#         print(f"Employee salary:{self.get_salary()}")
-#         print(f"programming language:{self.programming_language}")
+    def show_developer_details(self):
+        print(f"Employee name :{self.name}")
+        print(f"Employee ID :{self._employee_id}")
+        print(f"Employee salary:{self.get_salary()}")
+        print(f"programming language:{self.programming_language}")
 
 
-# d = Developer("Jagdish","EMP01",50000,"Python")
-# d.show_developer_details()
+d = Developer("Jagdish","EMP01",50000,"Python")
+d.show_developer_details()
 
 
 
